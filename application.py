@@ -1,5 +1,7 @@
 from flask import Flask
+from flask_script import Manager
 from flask_sqlalchemy import SQLAlchemy
+
 
 class Application( Flask ):
     def __init__(self, import_name):
@@ -8,5 +10,7 @@ class Application( Flask ):
 
         db.init_app( self )
 
+
+db = SQLAlchemy()
 app = Application(__name__)
-db = SQLAlchemy( app )
+manage = Manager(app)

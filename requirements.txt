@@ -1,5 +1,4 @@
 flask
-
 flask-sqlalchemy
-
 myslqclient
+flask-script
