@@ -1,5 +1,6 @@
 from application import app,manage
 from flask_script import Server
+import www
 
 
 ## web server
